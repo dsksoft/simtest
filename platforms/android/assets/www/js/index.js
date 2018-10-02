@@ -11,7 +11,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
-        window.plugins.sim.getSimInfo(successCallback, errorCallback);
+        window.plugins.sim.getSimInfo(buscarDados, errorCallback);
     },
 
     // Update DOM on a Received Event
@@ -32,8 +32,9 @@ app.initialize();
 
 
 
-function successCallback(result) {
+function buscarDados(result) {
   console.log(result);
+
  
  /*document.getElementById("cardKey1").innerHTML = JSON.stringify(result.simSerialNumber);
    document.getElementById("cardKey2").innerHTML = JSON.stringify(result.carrierName);
@@ -68,7 +69,8 @@ function successCallback(result) {
       var simState = eval(simState);
       
      
-      document.getElementById("cardKey1").innerHTML = eval(JSON.stringify(result.simSerialNumber));
+      document.getElementById("cardKey1").innerHTML = result.simSerialNumber;
+      alert(JSON.stringify(result));
       document.getElementById("cardKey2").innerHTML = carrierName+countryCode+mcc+mnc+phoneType+simState;  
       
 }
@@ -76,16 +78,19 @@ function successCallback(result) {
 
 function errorCallback(error) {
   console.log(error);
+  alert(error);
 }
 
 // Android only: check permission
 function hasReadPermission() {
-  window.plugins.sim.hasReadPermission(successCallback, requestReadPermission);
+  alert("vai pedir permissao")
+  window.plugins.sim.hasReadPermission(buscarDados, requestReadPermission);
 }
 
 // Android only: request permission
 function requestReadPermission() {
-  window.plugins.sim.requestReadPermission(successCallback, errorCallback);
+  alert("pedindo permissao");
+  window.plugins.sim.requestReadPermission(buscarDados, errorCallback);
 }
 
 
