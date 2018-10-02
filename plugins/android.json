@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.dsksoft.amilcarcard"
+        },
+        "cordova-plugin-sim": {
+            "PACKAGE_NAME": "com.dsksoft.amilcarcard"
+        },
+        "com.darktalker.cordova.screenshot": {
+            "PACKAGE_NAME": "com.dsksoft.amilcarcard"
+        }
+    },
+    "dependent_plugins": {}
+}

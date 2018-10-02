@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  rel="stylesheet" type="text/css" href="css/home.css">
+       <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  -->
+        <title>Sim Identity</title>
+    </head>
+<body link="#4AB1F9" vlink="#4AB1F9" alink="#4AB1F9">
+2.18.21
+        <div class="app">
+            <div id="deviceready">
+                <p class="event listening"></p>
+                <p class="event received"></p> 
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script> 
+
+<table width="960" style="background-color:#fff;">
+      <tr><td height="10"></td></tr>
+      <tr><td align="center">
+           <img src="images/dsklogo.png" width="820" height="300"></td></tr>
+     <tr><td height="30"></td></tr>
+     <tr><td align="center"><p><font face="verdana" size="12" color="#4AB1F9"><b>SIM CHIP KEY INFORMATION</b></font></p></td></tr>
+
+<tr><td align="center">
+<font face="verdana" size="6" color="#4AB1F9" id="week"></font>&nbsp;&nbsp;&nbsp;&nbsp;<font face="verdana" size="6" color="#4AB1F9" id="month"></font>&nbsp;&nbsp;<font face="verdana" size="6" color="#4AB1F9" id="day"></font>&nbsp;&nbsp;<font face="verdana" size="6" color="#4AB1F9" id="year"></font>
+<br>
+<font face="verdana" size="6" color="#4AB1F9" id="hour"></font><font face="verdana" size="4" color="#4AB1F9">H.</font>&nbsp;<font face="verdana" size="6" color="#4AB1F9" id="minute"></font><font face="verdana" size="4" color="#4AB1F9">m.</font>&nbsp;<font face="verdana" size="6" color="#4AB1F9" id="second"></font><font face="verdana" size="4" color="#4AB1F9">s.</font>
+</td></tr>
+
+<script>
+
+var d = new Date();
+ 
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+document.getElementById("week").innerHTML  = days[d.getDay()];
+document.getElementById("month").innerHTML = months[d.getMonth()];
+document.getElementById("day").innerHTML   = d.getDate();
+document.getElementById("year").innerHTML  = d.getFullYear(); 
+
+document.getElementById("hour").innerHTML  = d.getHours();
+document.getElementById("minute").innerHTML= d.getMinutes();
+document.getElementById("second").innerHTML= d.getSeconds(); 
+
+</script>
+<tr><td width="200" height="30"></td></tr>
+   <tr><td width="660">
+<table width="660" align="center">
+   <tr><td align="center">
+      <font face="verdana" size="6" color="#000000"><b>READ THIS FIRST<br>ID-protected Eco Business Card</b><br>Make a Screenshot from this screen using the Screenshot button below send us as an attachment file from your mobile picture gallery using either the SMS or Email button</font>
+      <br><br>
+      <a href=http://ecobusinesscard.org><font face="verdana" size="6" color="#4AB1F9"><b>FREE Download Eco Business Card</b></font></a></td>
+   </tr>
+</table>
+</td></tr>
+<tr><td width="200" height="20"></td></tr>
+<tr><td>
+<table width="660" border="8" align="center" bgcolor="#000000" bordercolor="#cfa659"> 
+  <tr><td>
+
+  <table width="660">
+  <tr><td width="200" colspan="2" height="20"></td></tr>
+  <tr><td align="center"><b><font face="verdana" size="6" color="#00ff01" id="cardKey1"></font></b></td></tr>
+  <tr><td align="center"><b><font face="verdana" size="6" color="#00ff01" id="cardKey2"></font></b></td></tr>
+  <tr><td width="200" colspan="2" height="20"></td></tr>
+  </table>
+   </td></tr>
+</table>
+</td></tr>
+<tr><td>
+<table width="960">
+<tr><td  align="center" height="20"></td></tr>  
+<tr>
+    <td align="center" colspan="3">
+      <a href="javascript:printscreen();">
+      <button type="button" class="small" >SCREENSHOT</button></a>
+    </td> 
+</tr>  
+<tr><td  align="center" height="50" colspan="3"></td></tr>   
+<tr>
+    <td><a href="sms:+5511989198822?body=Here is my Screenshot Information for my new Eco Business Card">
+        <button type="button" class="small" >S M S</button></a>
+    </td>
+    <td width="100">&nbsp;&nbsp;&nbsp;</td> 
+    <td>
+      <a href="mailto:card@dsksoft.com?subject=SIM Test ID-Protected Eco Business Card Screenshot&body=Here is my Screenshot attachment file for my ID-protected Eco Business Card">
+      <button type="button" class="small" >E M A I L</button></a>
+    </td> 
+</tr>
+</table>
+</td></tr></table>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+
+
+body{
+   
+    background-color: #fff;
+}
+
+
+button.small{ 
+    background-color:#fff; 
+    font-size: 40px;
+    color:#4AB1F9;  
+    height: 60px;
+    width: 450px;
+    outline: none;     
+    border-radius: 15px;  
+    border-radius: 15px;  
+    border-radius: 15px;  
+    border: 5px solid #4AB1F9;  
+}   
+
+
+area {
+  outline: 0;
+} 
+
